@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase CRUD</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/pulse/bootstrap.min.css">
+</head>
+<body>
+    
+<div class="container p-">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <form id="task-form">
+                        <div class="form_group">
+                            <input type="text" id="task-title" class="form-control"
+                            placeholder="Task Title" autofocus>
+                        </div>
+                    
+                        <div class="form_group">
+                            <textarea id="task-description" rows="3" class="form-control"
+                            placeholder="Task Description"></textarea>
+                        </div>
+                        <button class="btn btn-primary" id="btn-task-form">
+                            Save
+                        </button>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>4
+
+
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBK2m-6wjsJ7DBpbh52Y4qdaANnhzBdyJU",
+    authDomain: "geodb-16f3d.firebaseapp.com",
+    databaseURL: "https://geodb-16f3d.firebaseio.com",
+    projectId: "geodb-16f3d",
+    storageBucket: "geodb-16f3d.appspot.com",
+    messagingSenderId: "19417547136",
+    appId: "1:19417547136:web:58193db60e92c05684c165"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<script src="./index.js"></script>
+</body>
+</html>
